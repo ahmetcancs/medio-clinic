@@ -1,0 +1,47 @@
+﻿@model MedioClinic.Models.Doctors.DoctorsSectionViewModel
+
+
+
+<div class="section kn-section-top">
+    <div class="container">
+        <!-- Doctors header section-->
+        <div class="row">
+            <h1 class="header col s12">@Model.Title</h1>
+        </div>
+    </div>
+</div>
+
+<!--   Doctors Section   -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.Items)
+            {
+                <div class="col l4 m12 s12">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="@item.Image" alt="@item.Name">
+                        </div>
+                        <div class="card-title kn-margin-m kn-padding-m truncate">
+                            <a href="doctorprofile.html" target="_blank">Jon Doe, MD</a>
+                        </div>
+                        <div class="card-content kn-doctor-card-content">
+                            @Html.Raw(item.Description)
+                        </div>
+                        <div class="kn-badges kn-margin-m kn-padding-m">
+                            <span class="kn-badge @(item.Badge == true ? "opened" : "")">
+                                Open
+                            </span>
+                            <span class="kn-badge @(item.Badge == true ? "closed" : "")">Now closed</span> 
+                        </div>
+                        <div class="card-action">
+                            <a href="@item.Button">@item.ButtonTitle</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+                            

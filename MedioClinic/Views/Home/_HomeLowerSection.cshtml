@@ -1,0 +1,21 @@
+﻿@model MedioClinic.Models.Home.HomeLowerSectionViewModel
+
+<div class="container">
+    <div class="section">
+        <div class="row">
+            @foreach (var item in Model.Items)
+            {
+               <div class="col s12 m4">
+                <div class="icon-block">
+                    <img class="kn-icons kn-center" src="@item.Image" />
+                    <h4 class="center">@item.Title</h4>
+                        @Html.Raw(item.Description)
+                </div>
+            </div> 
+            }
+            
+        </div>
+    </div>
+    <br>
+    <br>
+</div>

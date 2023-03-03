@@ -1,0 +1,285 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\404 photo\\notfound.jpg",
+      "PackagePath": "staticwebassets\\assets\\404 photo\\notfound.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Blog photos\\518897996.jpg",
+      "PackagePath": "staticwebassets\\assets\\Blog photos\\518897996.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Blog photos\\673664526.jpg",
+      "PackagePath": "staticwebassets\\assets\\Blog photos\\673664526.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Blog photos\\846542868.jpg",
+      "PackagePath": "staticwebassets\\assets\\Blog photos\\846542868.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Blog photos\\874933196.jpg",
+      "PackagePath": "staticwebassets\\assets\\Blog photos\\874933196.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Blog photos\\879180126.jpg",
+      "PackagePath": "staticwebassets\\assets\\Blog photos\\879180126.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Blog photos\\912401464.jpg",
+      "PackagePath": "staticwebassets\\assets\\Blog photos\\912401464.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Doctors photos\\defaultdoctorimage.jpg",
+      "PackagePath": "staticwebassets\\assets\\Doctors photos\\defaultdoctorimage.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Doctors photos\\doe.jpg",
+      "PackagePath": "staticwebassets\\assets\\Doctors photos\\doe.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Doctors photos\\joplin.jpg",
+      "PackagePath": "staticwebassets\\assets\\Doctors photos\\joplin.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Doctors photos\\piaf.jpg",
+      "PackagePath": "staticwebassets\\assets\\Doctors photos\\piaf.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Doctors photos\\snow.jpg",
+      "PackagePath": "staticwebassets\\assets\\Doctors photos\\snow.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Doctors photos\\sparrow.jpg",
+      "PackagePath": "staticwebassets\\assets\\Doctors photos\\sparrow.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Doctors photos\\vick.jpg",
+      "PackagePath": "staticwebassets\\assets\\Doctors photos\\vick.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Icons for homepage\\cardio-therapy.png",
+      "PackagePath": "staticwebassets\\assets\\Icons for homepage\\cardio-therapy.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Icons for homepage\\emergency-services.png",
+      "PackagePath": "staticwebassets\\assets\\Icons for homepage\\emergency-services.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Icons for homepage\\medical-consultancy.png",
+      "PackagePath": "staticwebassets\\assets\\Icons for homepage\\medical-consultancy.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\24-7-remote-support.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\24-7-remote-support.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\academic-research.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\academic-research.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\clinic-premises-1.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\clinic-premises-1.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\clinic-premises-2.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\clinic-premises-2.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\clinic-premises-3.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\clinic-premises-3.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\clinic-premises-4.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\clinic-premises-4.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\clinic-premises-5.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\clinic-premises-5.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\en-route-physician.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\en-route-physician.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\field-research-1.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\field-research-1.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\field-research-2.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\field-research-2.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\first-aid-training.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\first-aid-training.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\health-scan.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\health-scan.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\infection-sources-tuition.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\infection-sources-tuition.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\internal-medicine-services.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\internal-medicine-services.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\john-backbone.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\john-backbone.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\laboratory-research-1.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\laboratory-research-1.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\laboratory-research-2.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\laboratory-research-2.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\preventive-medication-planning.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\preventive-medication-planning.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\risk-assessment.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\risk-assessment.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\self-funded-research-1.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\self-funded-research-1.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\self-funded-research-2.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\self-funded-research-2.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\travel-planning.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\travel-planning.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Landing page photos\\vaccination.png",
+      "PackagePath": "staticwebassets\\assets\\Landing page photos\\vaccination.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Logo\\Logoic.png",
+      "PackagePath": "staticwebassets\\assets\\Logo\\Logoic.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Logo\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\Logo\\favicon.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Logo\\logoicon.svg",
+      "PackagePath": "staticwebassets\\assets\\Logo\\logoicon.svg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Logo\\mcfavicon.ico",
+      "PackagePath": "staticwebassets\\assets\\Logo\\mcfavicon.ico"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Medical Centers photos\\cardioclinic.jpg",
+      "PackagePath": "staticwebassets\\assets\\Medical Centers photos\\cardioclinic.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Medical Centers photos\\dentists.jpg",
+      "PackagePath": "staticwebassets\\assets\\Medical Centers photos\\dentists.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Medical Centers photos\\diabetes.jpg",
+      "PackagePath": "staticwebassets\\assets\\Medical Centers photos\\diabetes.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Medical Centers photos\\emergencyservices.jpg",
+      "PackagePath": "staticwebassets\\assets\\Medical Centers photos\\emergencyservices.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Medical Centers photos\\generalpractitioners.jpg",
+      "PackagePath": "staticwebassets\\assets\\Medical Centers photos\\generalpractitioners.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Medical Centers photos\\gynecologists.jpg",
+      "PackagePath": "staticwebassets\\assets\\Medical Centers photos\\gynecologists.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Medical Centers photos\\orthopedics.jpg",
+      "PackagePath": "staticwebassets\\assets\\Medical Centers photos\\orthopedics.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\Sign-In photo\\843617064.jpg",
+      "PackagePath": "staticwebassets\\assets\\Sign-In photo\\843617064.jpg"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\facebook.png",
+      "PackagePath": "staticwebassets\\assets\\facebook.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\assets\\twitter.png",
+      "PackagePath": "staticwebassets\\assets\\twitter.png"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\css\\icons.css",
+      "PackagePath": "staticwebassets\\css\\icons.css"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\css\\materialize.css",
+      "PackagePath": "staticwebassets\\css\\materialize.css"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\css\\materialize.min.css",
+      "PackagePath": "staticwebassets\\css\\materialize.min.css"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\js\\dropzone.js",
+      "PackagePath": "staticwebassets\\js\\dropzone.js"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\js\\init.js",
+      "PackagePath": "staticwebassets\\js\\init.js"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\js\\jquery-3.3.1.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.3.1.js"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\js\\materialize.js",
+      "PackagePath": "staticwebassets\\js\\materialize.js"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\js\\materialize.min.js",
+      "PackagePath": "staticwebassets\\js\\materialize.min.js"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\swiper\\css\\swiper.css",
+      "PackagePath": "staticwebassets\\swiper\\css\\swiper.css"
+    },
+    {
+      "Id": "C:\\inetpub\\wwwroot\\medio-clinic-mvc\\MedioClinic\\wwwroot\\swiper\\js\\swiper.js",
+      "PackagePath": "staticwebassets\\swiper\\js\\swiper.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MedioClinic.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.MedioClinic.props",
+      "PackagePath": "build\\MedioClinic.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.MedioClinic.props",
+      "PackagePath": "buildMultiTargeting\\MedioClinic.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.MedioClinic.props",
+      "PackagePath": "buildTransitive\\MedioClinic.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

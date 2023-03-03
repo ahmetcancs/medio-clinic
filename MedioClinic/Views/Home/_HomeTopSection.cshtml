@@ -1,0 +1,19 @@
+﻿@model MedioClinic.Models.Home.HomeTopSectionViewModel
+
+<div class="section kn-section-top">
+    <div class="kn-header-gradient">
+        <div class="container kn-header">
+            <h1 class="col l10 m4 s12">@Model.Title</h1>
+            <div class="row left">
+                @Html.Raw(Model.Description)
+            </div>
+            <div class="row">
+                <div class="left">
+                    <a href="@Model.Button" class="kn-btn-doctors btn waves-effect waves-light red darken-3">@Model.ButtonTitle</a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

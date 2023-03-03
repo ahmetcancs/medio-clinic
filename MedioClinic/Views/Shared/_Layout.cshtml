@@ -1,0 +1,144 @@
+﻿@*/*<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>*@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Home | Medio Clinic</title>
+    <!-- CSS  -->
+    <link rel="shortcut icon" type="image/png" href="/assets/Logo/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+          crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="index.html" class="brand-logo">
+                <img class="kn-logo" src="/assets/Logo/Logoic.png">
+                <strong>Medio</strong>Clinic
+            </a>
+            <!-- Languages selector -->
+            <ul id="langs" class="dropdown-content">
+                <li>
+                    <a href="#">EN</a>
+                </li>
+                <li>
+                    <a href="#">ESP</a>
+                </li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="doctors.html">Our doctors</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact us</a>
+                </li>
+                <li>
+                    <a class="dropdown-trigger" href="#" data-target="langs">
+                        EN
+                        <i class="fas fa-globe-africa right"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul id="nav-mobile" class="sidenav">
+                <li class="kn-bold">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="doctors.html">Our doctors</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact us</a>
+                </li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+    </nav>
+
+    @RenderBody()
+
+    <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12">
+                    <h5 class="white-text">Contact</h5>
+                    <div class="grey-text text-lighten-4">
+                        <address>
+                            <p class="kn-smaller kn-address">
+                                <strong>Medio Clinic</strong>
+                                <br> 617-600-225
+                                <br> info@medio-clinic.com
+                                <br> 7A Kentico Street, Bedford, NH 03110, USA
+                            </p>
+                        </address>
+                    </div>
+                </div>
+                <div class="col l4 s12">
+                    <h5 class="white-text">Follow Us</h5>
+                    <div class="kn-social">
+                        <a href="http://www.facebook.com/KenticoCMS" title="Follow us on Facebook">
+                            <img src="/assets/facebook.png">
+                        </a>
+                        <a href="https://twitter.com/Kentico" title="Follow us on Twitter">
+                            <img src="/assets/twitter.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col l4 s12">
+                    <h5 class="white-text">Navigation</h5>
+                    <ul class="kn-smaller">
+                        <li>
+                            <a class="white-text" href="#">Our doctors</a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright white">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="blue-grey-text text-darken-2">
+                            Built with
+                            <a href="http://materializecss.com">Materialize</a> for the MVC Developer training. Kentico, 2018.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/init.js"></script>
+
+</body>
+
+</html>
