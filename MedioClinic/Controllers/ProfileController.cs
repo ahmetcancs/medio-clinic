@@ -7,6 +7,7 @@ using MedioClinic.Repositories.Profiles;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
+
 [assembly: RegisterPageRoute(Profile.CLASS_NAME, typeof(ProfileController), ActionName = "Index")]
 namespace MedioClinic.Controllers
 {
@@ -24,14 +25,15 @@ namespace MedioClinic.Controllers
             this.attachmentUrlRetriever = attachmentUrlRetriever;
             this.profileRepository = profileRepository;
         }
-        public IActionResult Index(Delegate Request)
+        public IActionResult Index()
         {
-            var path = Request.ToString();
-            var profile = profileRepository.GetProfiles(path).FirstOrDefault();
-            var viewmodel = new ProfileViewModel();
             
-            viewmodel = ProfileViewModel.GetViewModel(profile);
-            return View("Profile", viewmodel);
+            var profile = profileRepository.GetProfiles("/profile").FirstOrDefault();
+            var viewModel = new ProfileViewModel();
+            
+            viewModel = ProfileViewModel.GetViewModel(profile);
+            return View("Profile", viewModel);
         }
     }
+    
 }

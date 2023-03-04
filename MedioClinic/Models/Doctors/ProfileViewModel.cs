@@ -1,5 +1,6 @@
 ﻿using CMS.DocumentEngine.Types.MC;
 using MedioClinic.Helpers;
+using System;
 
 namespace MedioClinic.Models.Doctors
 {
@@ -32,5 +33,6 @@ namespace MedioClinic.Models.Doctors
                 Description = model.Description
             };
         }
+
     }
 }

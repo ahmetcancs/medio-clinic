@@ -16,9 +16,10 @@ namespace MedioClinic.Helpers
         }
         private static void AddRepositories(IServiceCollection services)
         {
-            services.AddSingleton<ProfileRepository>();
+            
             services.AddSingleton<HomeRepository>();
             services.AddSingleton<DoctorsRepository>();
+            services.AddSingleton<ProfileRepository>();
             services.AddHttpContextAccessor();
 
         }

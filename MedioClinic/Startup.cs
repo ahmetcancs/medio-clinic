@@ -94,6 +94,7 @@ namespace BlankSiteCore
                  {
                      await context.Response.WriteAsync("The site has not been configured yet.");
                  });*/
+
                 endpoints.MapDefaultControllerRoute();
             });
         }
