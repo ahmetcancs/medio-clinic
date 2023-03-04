@@ -18,27 +18,27 @@ using CMS.DataEngine;
 using CMS.DocumentEngine;
 using CMS.DocumentEngine.Types.MC;
 
-[assembly: RegisterDocumentType(DoctorsSectionItem.CLASS_NAME, typeof(DoctorsSectionItem))]
+[assembly: RegisterDocumentType(Profile.CLASS_NAME, typeof(Profile))]
 
 namespace CMS.DocumentEngine.Types.MC
 {
     /// <summary>
-    /// Represents a content item of type DoctorsSectionItem.
+    /// Represents a content item of type Profile.
     /// </summary>
-    public partial class DoctorsSectionItem : TreeNode
+    public partial class Profile : TreeNode
     {
         #region "Constants and variables"
 
         /// <summary>
         /// The name of the data class.
         /// </summary>
-        public const string CLASS_NAME = "MC.DoctorsSectionItem";
+        public const string CLASS_NAME = "MC.Profile";
 
 
         /// <summary>
-        /// The instance of the class that provides extended API for working with DoctorsSectionItem fields.
+        /// The instance of the class that provides extended API for working with Profile fields.
         /// </summary>
-        private readonly DoctorsSectionItemFields mFields;
+        private readonly ProfileFields mFields;
 
         #endregion
 
@@ -46,18 +46,18 @@ namespace CMS.DocumentEngine.Types.MC
         #region "Properties"
 
         /// <summary>
-        /// DoctorsSectionItemID.
+        /// DoctorProfileID.
         /// </summary>
         [DatabaseIDField]
-        public int DoctorsSectionItemID
+        public int DoctorProfileID
         {
             get
             {
-                return ValidationHelper.GetInteger(GetValue("DoctorsSectionItemID"), 0);
+                return ValidationHelper.GetInteger(GetValue("DoctorProfileID"), 0);
             }
             set
             {
-                SetValue("DoctorsSectionItemID", value);
+                SetValue("DoctorProfileID", value);
             }
         }
 
@@ -97,23 +97,6 @@ namespace CMS.DocumentEngine.Types.MC
 
 
         /// <summary>
-        /// Description.
-        /// </summary>
-        [DatabaseField]
-        public string Description
-        {
-            get
-            {
-                return ValidationHelper.GetString(GetValue("Description"), @"");
-            }
-            set
-            {
-                SetValue("Description", value);
-            }
-        }
-
-
-        /// <summary>
         /// Badge.
         /// </summary>
         [DatabaseField]
@@ -131,44 +114,61 @@ namespace CMS.DocumentEngine.Types.MC
 
 
         /// <summary>
-        /// Button.
+        /// Education.
         /// </summary>
         [DatabaseField]
-        public string Button
+        public string Education
         {
             get
             {
-                return ValidationHelper.GetString(GetValue("Button"), @"");
+                return ValidationHelper.GetString(GetValue("Education"), @"");
             }
             set
             {
-                SetValue("Button", value);
+                SetValue("Education", value);
             }
         }
 
 
         /// <summary>
-        /// ButtonTitle.
+        /// DescriptionTitle.
         /// </summary>
         [DatabaseField]
-        public string ButtonTitle
+        public string DescriptionTitle
         {
             get
             {
-                return ValidationHelper.GetString(GetValue("ButtonTitle"), @"");
+                return ValidationHelper.GetString(GetValue("DescriptionTitle"), @"");
             }
             set
             {
-                SetValue("ButtonTitle", value);
+                SetValue("DescriptionTitle", value);
             }
         }
 
 
         /// <summary>
-        /// Gets an object that provides extended API for working with DoctorsSectionItem fields.
+        /// Description.
+        /// </summary>
+        [DatabaseField]
+        public string Description
+        {
+            get
+            {
+                return ValidationHelper.GetString(GetValue("Description"), @"");
+            }
+            set
+            {
+                SetValue("Description", value);
+            }
+        }
+
+
+        /// <summary>
+        /// Gets an object that provides extended API for working with Profile fields.
         /// </summary>
         [RegisterProperty]
-        public DoctorsSectionItemFields Fields
+        public ProfileFields Fields
         {
             get
             {
@@ -178,39 +178,39 @@ namespace CMS.DocumentEngine.Types.MC
 
 
         /// <summary>
-        /// Provides extended API for working with DoctorsSectionItem fields.
+        /// Provides extended API for working with Profile fields.
         /// </summary>
         [RegisterAllProperties]
-        public partial class DoctorsSectionItemFields : AbstractHierarchicalObject<DoctorsSectionItemFields>
+        public partial class ProfileFields : AbstractHierarchicalObject<ProfileFields>
         {
             /// <summary>
-            /// The content item of type DoctorsSectionItem that is a target of the extended API.
+            /// The content item of type Profile that is a target of the extended API.
             /// </summary>
-            private readonly DoctorsSectionItem mInstance;
+            private readonly Profile mInstance;
 
 
             /// <summary>
-            /// Initializes a new instance of the <see cref="DoctorsSectionItemFields" /> class with the specified content item of type DoctorsSectionItem.
+            /// Initializes a new instance of the <see cref="ProfileFields" /> class with the specified content item of type Profile.
             /// </summary>
-            /// <param name="instance">The content item of type DoctorsSectionItem that is a target of the extended API.</param>
-            public DoctorsSectionItemFields(DoctorsSectionItem instance)
+            /// <param name="instance">The content item of type Profile that is a target of the extended API.</param>
+            public ProfileFields(Profile instance)
             {
                 mInstance = instance;
             }
 
 
             /// <summary>
-            /// DoctorsSectionItemID.
+            /// DoctorProfileID.
             /// </summary>
-            public int ID
+            public int DoctorProfileID
             {
                 get
                 {
-                    return mInstance.DoctorsSectionItemID;
+                    return mInstance.DoctorProfileID;
                 }
                 set
                 {
-                    mInstance.DoctorsSectionItemID = value;
+                    mInstance.DoctorProfileID = value;
                 }
             }
 
@@ -248,22 +248,6 @@ namespace CMS.DocumentEngine.Types.MC
 
 
             /// <summary>
-            /// Description.
-            /// </summary>
-            public string Description
-            {
-                get
-                {
-                    return mInstance.Description;
-                }
-                set
-                {
-                    mInstance.Description = value;
-                }
-            }
-
-
-            /// <summary>
             /// Badge.
             /// </summary>
             public bool Badge
@@ -280,33 +264,49 @@ namespace CMS.DocumentEngine.Types.MC
 
 
             /// <summary>
-            /// Button.
+            /// Education.
             /// </summary>
-            public string Button
+            public string Education
             {
                 get
                 {
-                    return mInstance.Button;
+                    return mInstance.Education;
                 }
                 set
                 {
-                    mInstance.Button = value;
+                    mInstance.Education = value;
                 }
             }
 
 
             /// <summary>
-            /// ButtonTitle.
+            /// DescriptionTitle.
             /// </summary>
-            public string ButtonTitle
+            public string DescriptionTitle
             {
                 get
                 {
-                    return mInstance.ButtonTitle;
+                    return mInstance.DescriptionTitle;
                 }
                 set
                 {
-                    mInstance.ButtonTitle = value;
+                    mInstance.DescriptionTitle = value;
+                }
+            }
+
+
+            /// <summary>
+            /// Description.
+            /// </summary>
+            public string Description
+            {
+                get
+                {
+                    return mInstance.Description;
+                }
+                set
+                {
+                    mInstance.Description = value;
                 }
             }
         }
@@ -317,11 +317,11 @@ namespace CMS.DocumentEngine.Types.MC
         #region "Constructors"
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DoctorsSectionItem" /> class.
+        /// Initializes a new instance of the <see cref="Profile" /> class.
         /// </summary>
-        public DoctorsSectionItem() : base(CLASS_NAME)
+        public Profile() : base(CLASS_NAME)
         {
-            mFields = new DoctorsSectionItemFields(this);
+            mFields = new ProfileFields(this);
         }
 
         #endregion

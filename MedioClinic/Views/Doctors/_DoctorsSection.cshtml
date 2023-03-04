@@ -20,10 +20,10 @@
                 <div class="col l4 m12 s12">
                     <div class="card">
                         <div class="card-image">
-                            <img src="@item.Image" alt="@item.Name">
+                            <img src="@item.Image" alt="@item.Title">
                         </div>
                         <div class="card-title kn-margin-m kn-padding-m truncate">
-                            <a href="doctorprofile.html" target="_blank">Jon Doe, MD</a>
+                            <a href="doctorprofile.html" target="_blank">@item.Title</a>
                         </div>
                         <div class="card-content kn-doctor-card-content">
                             @Html.Raw(item.Description)

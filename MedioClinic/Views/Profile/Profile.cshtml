@@ -1,0 +1,37 @@
+﻿@model MedioClinic.Models.Doctors.ProfileViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="kn-doctor-profile">
+                <div class="col l4 m6 s12">
+                    <img src="@Model.Image" alt="Doctor's photo" />
+                </div>
+                <div class="col l8 m6 s12">
+                    <div class="kn-doctor-profile-box">
+                        <div class="kn-doctor-profile-header">
+                            <h4> @Model.Title</h4>
+                        </div>
+                        <span class="kn-badge@(Model.Badge == true ? "opened" : "")">Open</span>
+                        <span class="kn-badge @(Model.Badge == true ? "closed" : "")">now closed</span>
+                        <br>
+                        <div class="kn-doctor-profile-degree">
+                            <div class="">
+                                @Html.Raw(Model.Education)
+                            </div>
+                        </div>
+                        <div class="kn-doctor-profile-bio">
+                            <h5>@Model.DescriptionTitle</h5>
+                            @Html.Raw(Model.Description)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

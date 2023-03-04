@@ -18,6 +18,9 @@ namespace BlankSiteCore
 {
     public class Startup
     {
+        public const string DEFAULT_WITHOUT_LANGUAGE_PREFIX_ROUTE_NAME = "DefaultWithoutLanguagePrefix";
+        public const string CONSTRAINT_FOR_NON_ROUTER_PAGE_CONTROLLERS = "Home|Doctors|Profile";
+
         public IWebHostEnvironment Environment { get; }
 
 

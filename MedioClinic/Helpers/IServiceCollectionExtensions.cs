@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using MedioClinic.Repositories.Home;
 using MedioClinic.Repositories.Doctors;
+using MedioClinic.Repositories.Profiles;
 
 namespace MedioClinic.Helpers
 {
@@ -15,6 +16,7 @@ namespace MedioClinic.Helpers
         }
         private static void AddRepositories(IServiceCollection services)
         {
+            services.AddSingleton<ProfileRepository>();
             services.AddSingleton<HomeRepository>();
             services.AddSingleton<DoctorsRepository>();
             services.AddHttpContextAccessor();

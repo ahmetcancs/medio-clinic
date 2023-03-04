@@ -16,8 +16,5 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />
-    <Folder Include="Models\Generated\" />
-    <Folder Include="Repositories\" />
-    <Folder Include="Views\" />
   </ItemGroup>
 </Project>
