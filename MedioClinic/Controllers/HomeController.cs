@@ -3,7 +3,7 @@ using Kentico.Content.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
 using MedioClinic.Controllers;
 using MedioClinic.Models.Home;
-using MedioClinic.Repositories.Home;
+using MedioClinic.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 

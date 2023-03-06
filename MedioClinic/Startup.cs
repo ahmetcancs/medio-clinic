@@ -19,7 +19,7 @@ namespace BlankSiteCore
     public class Startup
     {
         public const string DEFAULT_WITHOUT_LANGUAGE_PREFIX_ROUTE_NAME = "DefaultWithoutLanguagePrefix";
-        public const string CONSTRAINT_FOR_NON_ROUTER_PAGE_CONTROLLERS = "Home|Doctors|Profile";
+        public const string CONSTRAINT_FOR_NON_ROUTER_PAGE_CONTROLLERS = "Home|Doctors";
 
         public IWebHostEnvironment Environment { get; }
 
@@ -88,14 +88,40 @@ namespace BlankSiteCore
 
             app.UseEndpoints(endpoints =>
             {
-                /* endpoints.Kentico().MapRoutes();
+                //endpoints.Kentico().MapRoutes();
 
-                 endpoints.MapGet("/", async context =>
+                /* endpoints.MapGet("/", async context =>
                  {
                      await context.Response.WriteAsync("The site has not been configured yet.");
                  });*/
 
-                endpoints.MapDefaultControllerRoute();
+                // endpoints.MapDefaultControllerRoute();
+                endpoints.Kentico().MapRoutes();
+
+                endpoints.MapControllerRoute(
+                   name: "error",
+                   pattern: "error/{code}",
+                   defaults: new { controller = "HttpErrors", action = "Error" }
+                );
+
+                endpoints.MapControllerRoute(
+                   name: "default",
+                   pattern: $"{{culture}}/{{controller}}/{{action}}",
+                   constraints: new
+                   {
+                       culture = new SiteCultureConstraint { HideLanguagePrefixForDefaultCulture = true },
+                       controller = CONSTRAINT_FOR_NON_ROUTER_PAGE_CONTROLLERS
+                   }
+                );
+
+                endpoints.MapControllerRoute(
+                    name: DEFAULT_WITHOUT_LANGUAGE_PREFIX_ROUTE_NAME,
+                    pattern: "{controller}/{action}",
+                    constraints: new
+                    {
+                        controller = CONSTRAINT_FOR_NON_ROUTER_PAGE_CONTROLLERS
+                    }
+                );
             });
         }
     }

@@ -1,5 +1,4 @@
-﻿@model MedioClinic.Models.Doctors.ProfileViewModel
-
+﻿@model MedioClinic.Models.Doctors.SpecialViewModel
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -16,7 +15,7 @@
                         <div class="kn-doctor-profile-header">
                             <h4> @Model.Title</h4>
                         </div>
-                        <span class="kn-badge@(Model.Badge == true ? "opened" : "")">Open</span>
+                        <span class="kn-badge @(Model.Badge == true ? "opened" : "")">Open</span>
                         <span class="kn-badge @(Model.Badge == true ? "closed" : "")">now closed</span>
                         <br>
                         <div class="kn-doctor-profile-degree">

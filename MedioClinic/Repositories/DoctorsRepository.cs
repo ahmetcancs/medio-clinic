@@ -2,7 +2,7 @@
 using Kentico.Content.Web.Mvc;
 using System.Collections.Generic;
 
-namespace MedioClinic.Repositories.Doctors
+namespace MedioClinic.Repositories
 {
     public class DoctorsRepository
     {
@@ -21,6 +21,10 @@ namespace MedioClinic.Repositories.Doctors
             return DoctorsSectionItemProvider.GetDoctorsSectionItems();
 
         }
-       
+        public IEnumerable<Special> GetSpecials(string nodeAliasPath)
+        {
+            return SpecialProvider.GetSpecials();
+
+        }
     }
 }

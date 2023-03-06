@@ -18,27 +18,27 @@ using CMS.DataEngine;
 using CMS.DocumentEngine;
 using CMS.DocumentEngine.Types.MC;
 
-[assembly: RegisterDocumentType(Profile.CLASS_NAME, typeof(Profile))]
+[assembly: RegisterDocumentType(Special.CLASS_NAME, typeof(Special))]
 
 namespace CMS.DocumentEngine.Types.MC
 {
     /// <summary>
-    /// Represents a content item of type Profile.
+    /// Represents a content item of type Special.
     /// </summary>
-    public partial class Profile : TreeNode
+    public partial class Special : TreeNode
     {
         #region "Constants and variables"
 
         /// <summary>
         /// The name of the data class.
         /// </summary>
-        public const string CLASS_NAME = "MC.Profile";
+        public const string CLASS_NAME = "MC.Special";
 
 
         /// <summary>
-        /// The instance of the class that provides extended API for working with Profile fields.
+        /// The instance of the class that provides extended API for working with Special fields.
         /// </summary>
-        private readonly ProfileFields mFields;
+        private readonly SpecialFields mFields;
 
         #endregion
 
@@ -46,18 +46,18 @@ namespace CMS.DocumentEngine.Types.MC
         #region "Properties"
 
         /// <summary>
-        /// DoctorProfileID.
+        /// SpecialID.
         /// </summary>
         [DatabaseIDField]
-        public int DoctorProfileID
+        public int SpecialID
         {
             get
             {
-                return ValidationHelper.GetInteger(GetValue("DoctorProfileID"), 0);
+                return ValidationHelper.GetInteger(GetValue("SpecialID"), 0);
             }
             set
             {
-                SetValue("DoctorProfileID", value);
+                SetValue("SpecialID", value);
             }
         }
 
@@ -92,23 +92,6 @@ namespace CMS.DocumentEngine.Types.MC
             set
             {
                 SetValue("Title", value);
-            }
-        }
-
-
-        /// <summary>
-        /// Badge.
-        /// </summary>
-        [DatabaseField]
-        public bool Badge
-        {
-            get
-            {
-                return ValidationHelper.GetBoolean(GetValue("Badge"), true);
-            }
-            set
-            {
-                SetValue("Badge", value);
             }
         }
 
@@ -165,10 +148,27 @@ namespace CMS.DocumentEngine.Types.MC
 
 
         /// <summary>
-        /// Gets an object that provides extended API for working with Profile fields.
+        /// Badge.
+        /// </summary>
+        [DatabaseField]
+        public bool Badge
+        {
+            get
+            {
+                return ValidationHelper.GetBoolean(GetValue("Badge"), true);
+            }
+            set
+            {
+                SetValue("Badge", value);
+            }
+        }
+
+
+        /// <summary>
+        /// Gets an object that provides extended API for working with Special fields.
         /// </summary>
         [RegisterProperty]
-        public ProfileFields Fields
+        public SpecialFields Fields
         {
             get
             {
@@ -178,39 +178,39 @@ namespace CMS.DocumentEngine.Types.MC
 
 
         /// <summary>
-        /// Provides extended API for working with Profile fields.
+        /// Provides extended API for working with Special fields.
         /// </summary>
         [RegisterAllProperties]
-        public partial class ProfileFields : AbstractHierarchicalObject<ProfileFields>
+        public partial class SpecialFields : AbstractHierarchicalObject<SpecialFields>
         {
             /// <summary>
-            /// The content item of type Profile that is a target of the extended API.
+            /// The content item of type Special that is a target of the extended API.
             /// </summary>
-            private readonly Profile mInstance;
+            private readonly Special mInstance;
 
 
             /// <summary>
-            /// Initializes a new instance of the <see cref="ProfileFields" /> class with the specified content item of type Profile.
+            /// Initializes a new instance of the <see cref="SpecialFields" /> class with the specified content item of type Special.
             /// </summary>
-            /// <param name="instance">The content item of type Profile that is a target of the extended API.</param>
-            public ProfileFields(Profile instance)
+            /// <param name="instance">The content item of type Special that is a target of the extended API.</param>
+            public SpecialFields(Special instance)
             {
                 mInstance = instance;
             }
 
 
             /// <summary>
-            /// DoctorProfileID.
+            /// SpecialID.
             /// </summary>
-            public int DoctorProfileID
+            public int ID
             {
                 get
                 {
-                    return mInstance.DoctorProfileID;
+                    return mInstance.SpecialID;
                 }
                 set
                 {
-                    mInstance.DoctorProfileID = value;
+                    mInstance.SpecialID = value;
                 }
             }
 
@@ -243,22 +243,6 @@ namespace CMS.DocumentEngine.Types.MC
                 set
                 {
                     mInstance.Title = value;
-                }
-            }
-
-
-            /// <summary>
-            /// Badge.
-            /// </summary>
-            public bool Badge
-            {
-                get
-                {
-                    return mInstance.Badge;
-                }
-                set
-                {
-                    mInstance.Badge = value;
                 }
             }
 
@@ -309,6 +293,22 @@ namespace CMS.DocumentEngine.Types.MC
                     mInstance.Description = value;
                 }
             }
+
+
+            /// <summary>
+            /// Badge.
+            /// </summary>
+            public bool Badge
+            {
+                get
+                {
+                    return mInstance.Badge;
+                }
+                set
+                {
+                    mInstance.Badge = value;
+                }
+            }
         }
 
         #endregion
@@ -317,11 +317,11 @@ namespace CMS.DocumentEngine.Types.MC
         #region "Constructors"
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Profile" /> class.
+        /// Initializes a new instance of the <see cref="Special" /> class.
         /// </summary>
-        public Profile() : base(CLASS_NAME)
+        public Special() : base(CLASS_NAME)
         {
-            mFields = new ProfileFields(this);
+            mFields = new SpecialFields(this);
         }
 
         #endregion

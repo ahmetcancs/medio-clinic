@@ -2,7 +2,7 @@
 using Kentico.Content.Web.Mvc;
 using System.Collections.Generic;
 
-namespace MedioClinic.Repositories.Home
+namespace MedioClinic.Repositories
 {
     public class HomeRepository
     {

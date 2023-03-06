@@ -1,7 +1,6 @@
 ﻿using CMS.DocumentEngine.Types.MC;
 using MedioClinic.Models.Home;
-using MedioClinic.Repositories.Doctors;
-using MedioClinic.Repositories.Home;
+using MedioClinic.Repositories;
 using System.Collections.Generic;
 using System.Linq;
 

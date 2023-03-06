@@ -1,5 +1,5 @@
 ﻿using CMS.DocumentEngine.Types.MC;
-using MedioClinic.Repositories.Home;
+using MedioClinic.Repositories;
 using System.Collections.Generic;
 using System.Linq;
 

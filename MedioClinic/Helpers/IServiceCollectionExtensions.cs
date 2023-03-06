@@ -1,7 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using MedioClinic.Repositories.Home;
-using MedioClinic.Repositories.Doctors;
-using MedioClinic.Repositories.Profiles;
+using MedioClinic.Repositories;
 
 namespace MedioClinic.Helpers
 {
@@ -19,7 +17,8 @@ namespace MedioClinic.Helpers
             
             services.AddSingleton<HomeRepository>();
             services.AddSingleton<DoctorsRepository>();
-            services.AddSingleton<ProfileRepository>();
+            services.AddSingleton<ContactRepository>();
+            
             services.AddHttpContextAccessor();
 
         }

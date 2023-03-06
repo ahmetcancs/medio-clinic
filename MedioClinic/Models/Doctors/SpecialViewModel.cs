@@ -4,7 +4,7 @@ using System;
 
 namespace MedioClinic.Models.Doctors
 {
-    public class ProfileViewModel
+    public class SpecialViewModel
     {
         public string Image { get; set; }
         public string Title { get; set; }
@@ -15,7 +15,7 @@ namespace MedioClinic.Models.Doctors
         
 
         
-        public static ProfileViewModel GetViewModel(Profile model)
+        public static SpecialViewModel GetViewModel(Special model)
         {
             if (model == null)
             {
@@ -23,7 +23,7 @@ namespace MedioClinic.Models.Doctors
                 return null;
 
             }
-            return new ProfileViewModel
+            return new SpecialViewModel
             {
                 Image = MedioClinicAttachmentHelper.GetFullPath(model.Image),
                 Title = model.Title,

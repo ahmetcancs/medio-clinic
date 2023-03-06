@@ -1,0 +1,26 @@
+﻿@model MedioClinic.Models.Contact.ContactTopSectionViewModel
+
+
+<div class="section kn-section-top">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12">
+                <h1 class="header">@Model.HeaderTitle</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l8 m12 s12">
+                <h4 class="contact-header">@Model.SubTitle</h4>
+                @Html.Raw(Model.Description)
+            </div>
+            <div class="col l3 m12 s12 offset-l1 offset-m0 offset-s0 kn-contact-us-box">
+                <div class="kn-contact-box-header">
+                    <h5>Contact</h5>
+                </div>
+                <div class="kn-contact-content">
+                    @Html.Raw(Model.AddressDescription)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

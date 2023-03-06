@@ -1,0 +1,36 @@
+﻿@model MedioClinic.Models.Contact.ContactLowerSectionViewModel
+
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m12">
+                <h3>@Model.Title</h3>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var item in Model.Items)
+            {
+                <div class="col l4 m12 s12">
+                    <div class="kn-medcenter">
+                        <div class="kn-medcenter-image">
+                            <img src="@item.Image" alt="@item.Branch">
+
+                        </div>
+                        <div class="kn-badges kn-margin-no-left-s kn-padding-no-left-s">
+                            <span class="kn-badge @(item.Badge == true ? "opened" : "")">Open</span>
+                        <span class="kn-badge @(item.Badge == true ? "closed" : "")">now closed</span>
+                        </div>
+                        <div class="kn-medcenter-title kn-margin-no-left-s kn-padding-no-left-s truncate">
+                            <a href="medicalcenters.html" target="_blank">
+                                <strong>@item.Branch</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            }
+            
+        </div>
+    </div>
+</div>
+    
