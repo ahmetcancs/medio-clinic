@@ -131,23 +131,6 @@ namespace CMS.DocumentEngine.Types.MC
 
 
         /// <summary>
-        /// Button.
-        /// </summary>
-        [DatabaseField]
-        public string Button
-        {
-            get
-            {
-                return ValidationHelper.GetString(GetValue("Button"), @"");
-            }
-            set
-            {
-                SetValue("Button", value);
-            }
-        }
-
-
-        /// <summary>
         /// ButtonTitle.
         /// </summary>
         [DatabaseField]
@@ -160,6 +143,23 @@ namespace CMS.DocumentEngine.Types.MC
             set
             {
                 SetValue("ButtonTitle", value);
+            }
+        }
+
+
+        /// <summary>
+        /// ButtonLink.
+        /// </summary>
+        [DatabaseField]
+        public string ButtonLink
+        {
+            get
+            {
+                return ValidationHelper.GetString(GetValue("ButtonLink"), @"");
+            }
+            set
+            {
+                SetValue("ButtonLink", value);
             }
         }
 
@@ -280,22 +280,6 @@ namespace CMS.DocumentEngine.Types.MC
 
 
             /// <summary>
-            /// Button.
-            /// </summary>
-            public string Button
-            {
-                get
-                {
-                    return mInstance.Button;
-                }
-                set
-                {
-                    mInstance.Button = value;
-                }
-            }
-
-
-            /// <summary>
             /// ButtonTitle.
             /// </summary>
             public string ButtonTitle
@@ -307,6 +291,22 @@ namespace CMS.DocumentEngine.Types.MC
                 set
                 {
                     mInstance.ButtonTitle = value;
+                }
+            }
+
+
+            /// <summary>
+            /// ButtonLink.
+            /// </summary>
+            public string ButtonLink
+            {
+                get
+                {
+                    return mInstance.ButtonLink;
+                }
+                set
+                {
+                    mInstance.ButtonLink = value;
                 }
             }
         }

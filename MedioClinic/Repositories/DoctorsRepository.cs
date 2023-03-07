@@ -21,10 +21,6 @@ namespace MedioClinic.Repositories
             return DoctorsSectionItemProvider.GetDoctorsSectionItems();
 
         }
-        public IEnumerable<Special> GetSpecials(string nodeAliasPath)
-        {
-            return SpecialProvider.GetSpecials();
-
-        }
+       
     }
 }

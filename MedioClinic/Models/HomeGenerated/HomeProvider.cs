@@ -27,9 +27,9 @@ namespace CMS.DocumentEngine.Types.MC
         /// <summary>
         /// Returns a query that selects published pages of type Home.
         /// </summary>
-        public static DocumentQuery<Home> GetHomes()
+        public static DocumentQuery<Profiles> GetHomes()
         {
-            return DocumentHelper.GetDocuments<Home>().PublishedVersion().Published();
+            return DocumentHelper.GetDocuments<Profiles>().PublishedVersion().Published();
         }
 
 
@@ -39,7 +39,7 @@ namespace CMS.DocumentEngine.Types.MC
         /// <param name="nodeId">The identifier of the content tree node that represents the page.</param>
         /// <param name="siteName">The name of the site where the page belongs.</param>
         /// <param name="cultureName">The name of the language, e.g. en-US, that determines which localized version should be retrieved.</param>
-        public static DocumentQuery<Home> GetHome(int nodeId, string cultureName, string siteName)
+        public static DocumentQuery<Profiles> GetHome(int nodeId, string cultureName, string siteName)
         {
             return GetHomes().OnSite(siteName).Culture(cultureName).WhereEquals("NodeID", nodeId);
         }
@@ -51,7 +51,7 @@ namespace CMS.DocumentEngine.Types.MC
         /// <param name="nodeGuid">The globally unique identifier of the content tree node that represents the page.</param>
         /// <param name="siteName">The name of the site where the page belongs.</param>
         /// <param name="cultureName">The name of the language, e.g. en-US, that determines which localized version should be retrieved.</param>
-        public static DocumentQuery<Home> GetHome(Guid nodeGuid, string cultureName, string siteName)
+        public static DocumentQuery<Profiles> GetHome(Guid nodeGuid, string cultureName, string siteName)
         {
             return GetHomes().OnSite(siteName).Culture(cultureName).WhereEquals("NodeGUID", nodeGuid);
         }
@@ -63,7 +63,7 @@ namespace CMS.DocumentEngine.Types.MC
         /// <param name="nodeAliasPath">The alias path to the content tree node that represents the page.</param>
         /// <param name="siteName">The name of the site where the page belongs.</param>
         /// <param name="cultureName">The name of the language, e.g. en-US, that determines which localized version should be retrieved.</param>
-        public static DocumentQuery<Home> GetHome(string nodeAliasPath, string cultureName, string siteName)
+        public static DocumentQuery<Profiles> GetHome(string nodeAliasPath, string cultureName, string siteName)
         {
             return GetHomes().OnSite(siteName).Culture(cultureName).Path(nodeAliasPath);
         }

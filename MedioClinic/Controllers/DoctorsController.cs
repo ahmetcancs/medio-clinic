@@ -30,10 +30,10 @@ namespace MedioClinic.Controllers
         }
         public IActionResult Index()
         {
-            var special = doctorsRepository.GetSpecials("/doctors/profiles").FirstOrDefault();
+            
             var doctorsSection = doctorsRepository.GetDoctorsSections("/doctors").FirstOrDefault();
             var viewModel = new DoctorsViewModel();
-            viewModel.Special = SpecialViewModel.GetViewModel(special);
+            
             viewModel.DoctorsSection = DoctorsSectionViewModel.GetViewModel(doctorsSection, doctorsRepository);
             return View("Doctors",viewModel);
         }

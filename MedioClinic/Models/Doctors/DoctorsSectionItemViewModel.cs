@@ -11,8 +11,8 @@ namespace MedioClinic.Models.Doctors
         public string Title { get; set; }
         public string Description { get; set; }
         public bool Badge { get; set; }
-        public string Button { get; set; }
         public string ButtonTitle { get; set; }
+        public string ButtonLink { get; set; }
 
        
         public static DoctorsSectionItemViewModel GetViewModel(DoctorsSectionItem model)
@@ -31,8 +31,8 @@ namespace MedioClinic.Models.Doctors
                 Title = model.Title,
                 Description = model.Description,
                 Badge = model.Badge,
-                Button= model.Button,
-                ButtonTitle= model.ButtonTitle
+                ButtonTitle = model.ButtonTitle,
+                ButtonLink = model.ButtonLink
             };
         }
     }

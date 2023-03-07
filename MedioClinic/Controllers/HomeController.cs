@@ -7,7 +7,7 @@ using MedioClinic.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
-[assembly: RegisterPageRoute(Home.CLASS_NAME, typeof(HomeController), ActionName = "Index")]
+[assembly: RegisterPageRoute(Profiles.CLASS_NAME, typeof(HomeController), ActionName = "Index")]
 namespace MedioClinic.Controllers
 {
     public class HomeController : Controller

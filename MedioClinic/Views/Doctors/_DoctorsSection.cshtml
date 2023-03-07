@@ -23,7 +23,7 @@
                             <img src="@item.Image" alt="@item.Title">
                         </div>
                         <div class="card-title kn-margin-m kn-padding-m truncate">
-                            <a href="@item.Button" target="_blank">@item.Title</a>
+                            <a href="@item.ButtonLink" target="_blank">@item.Title</a>
                         </div>
                         <div class="card-content kn-doctor-card-content">
                             @Html.Raw(item.Description)
@@ -35,7 +35,7 @@
                             <span class="kn-badge @(item.Badge == true ? "closed" : "")">Now closed</span> 
                         </div>
                         <div class="card-action">
-                            <a href="@item.Button">@item.ButtonTitle</a>
+                            <a href="@Html.Raw(item.ButtonLink)">@item.ButtonTitle</a>
                         </div>
                     </div>
                 </div>
