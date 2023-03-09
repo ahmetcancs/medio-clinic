@@ -1,0 +1,44 @@
+﻿@model IEnumerable<MedioClinic.Models.Persons.PersonsViewModel>
+@using Kentico.Content.Web.Mvc;
+@using Kentico.PageBuilder.Web.Mvc
+@using Kentico.Web.Mvc
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            @foreach (var profile in Model.AsEnumerable())
+            {
+                <div class="kn-doctor-profile">
+                    <div class="col l4 m6 s12">
+                        <img src="@profile.Image" alt="Doctor's photo" />
+                    </div>
+                    <div class="col l8 m6 s12">
+                        <div class="kn-doctor-profile-box">
+                            <div class="kn-doctor-profile-header">
+                                <h4> @profile.Title</h4>
+                            </div>
+                            <div class="kn-badges kn-margin-no-left-s kn-padding-no-left-s">
+                                <span class="kn-badge @(profile.Badge == true ? "opened" : "")">Open</span>
+                                <span class="kn-badge @(profile.Badge == true ? "closed" : "")">now closed</span>
+                            </div>
+                            <br>
+                            <div class="kn-doctor-profile-degree">
+                                <div class="">
+                                    @Html.Raw(profile.Education)
+                                </div>
+                            </div>
+                            <div class="kn-doctor-profile-bio">
+                                <h5>@profile.DescriptionTitle</h5>
+                                @Html.Raw(profile.Description)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -18,7 +18,7 @@ namespace MedioClinic.Helpers
             services.AddSingleton<HomeRepository>();
             services.AddSingleton<DoctorsRepository>();
             services.AddSingleton<ContactRepository>();
-            
+            services.AddSingleton<PersonsRepository>();
             services.AddHttpContextAccessor();
 
         }

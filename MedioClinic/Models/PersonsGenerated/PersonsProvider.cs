@@ -20,52 +20,52 @@ using CMS.Helpers;
 namespace CMS.DocumentEngine.Types.MC
 {
     /// <summary>
-    /// Provides methods for retrieving pages of type Home.
+    /// Provides methods for retrieving pages of type Persons.
     /// </summary>
-    public partial class HomeProvider
+    public partial class PersonsProvider
     {
         /// <summary>
-        /// Returns a query that selects published pages of type Home.
+        /// Returns a query that selects published pages of type Persons.
         /// </summary>
-        public static DocumentQuery<Home> GetHomes()
+        public static DocumentQuery<Persons> GetPersons()
         {
-            return DocumentHelper.GetDocuments<Home>().PublishedVersion().Published();
+            return DocumentHelper.GetDocuments<Persons>().PublishedVersion().Published();
         }
 
 
         /// <summary>
-        /// Returns a published page of type Home that matches the specified criteria.
+        /// Returns a published page of type Persons that matches the specified criteria.
         /// </summary>
         /// <param name="nodeId">The identifier of the content tree node that represents the page.</param>
         /// <param name="siteName">The name of the site where the page belongs.</param>
         /// <param name="cultureName">The name of the language, e.g. en-US, that determines which localized version should be retrieved.</param>
-        public static DocumentQuery<Home> GetHome(int nodeId, string cultureName, string siteName)
+        public static DocumentQuery<Persons> GetPersons(int nodeId, string cultureName, string siteName)
         {
-            return GetHomes().OnSite(siteName).Culture(cultureName).WhereEquals("NodeID", nodeId);
+            return GetPersons().OnSite(siteName).Culture(cultureName).WhereEquals("NodeID", nodeId);
         }
 
 
         /// <summary>
-        /// Returns a published page of type Home that matches the specified criteria.
+        /// Returns a published page of type Persons that matches the specified criteria.
         /// </summary>
         /// <param name="nodeGuid">The globally unique identifier of the content tree node that represents the page.</param>
         /// <param name="siteName">The name of the site where the page belongs.</param>
         /// <param name="cultureName">The name of the language, e.g. en-US, that determines which localized version should be retrieved.</param>
-        public static DocumentQuery<Home> GetHome(Guid nodeGuid, string cultureName, string siteName)
+        public static DocumentQuery<Persons> GetPersons(Guid nodeGuid, string cultureName, string siteName)
         {
-            return GetHomes().OnSite(siteName).Culture(cultureName).WhereEquals("NodeGUID", nodeGuid);
+            return GetPersons().OnSite(siteName).Culture(cultureName).WhereEquals("NodeGUID", nodeGuid);
         }
 
 
         /// <summary>
-        /// Returns a published page of type Home that matches the specified criteria.
+        /// Returns a published page of type Persons that matches the specified criteria.
         /// </summary>
         /// <param name="nodeAliasPath">The alias path to the content tree node that represents the page.</param>
         /// <param name="siteName">The name of the site where the page belongs.</param>
         /// <param name="cultureName">The name of the language, e.g. en-US, that determines which localized version should be retrieved.</param>
-        public static DocumentQuery<Home> GetHome(string nodeAliasPath, string cultureName, string siteName)
+        public static DocumentQuery<Persons> GetPersons(string nodeAliasPath, string cultureName, string siteName)
         {
-            return GetHomes().OnSite(siteName).Culture(cultureName).Path(nodeAliasPath);
+            return GetPersons().OnSite(siteName).Culture(cultureName).Path(nodeAliasPath);
         }
     }
 }

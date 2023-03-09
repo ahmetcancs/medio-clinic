@@ -18,14 +18,14 @@ using CMS.DataEngine;
 using CMS.DocumentEngine;
 using CMS.DocumentEngine.Types.MC;
 
-[assembly: RegisterDocumentType(Profiles.CLASS_NAME, typeof(Profiles))]
+[assembly: RegisterDocumentType(Home.CLASS_NAME, typeof(Home))]
 
 namespace CMS.DocumentEngine.Types.MC
 {
     /// <summary>
     /// Represents a content item of type Home.
     /// </summary>
-    public partial class Profiles : TreeNode
+    public partial class Home : TreeNode
     {
         #region "Constants and variables"
 
@@ -118,14 +118,14 @@ namespace CMS.DocumentEngine.Types.MC
             /// <summary>
             /// The content item of type Home that is a target of the extended API.
             /// </summary>
-            private readonly Profiles mInstance;
+            private readonly Home mInstance;
 
 
             /// <summary>
             /// Initializes a new instance of the <see cref="HomeFields" /> class with the specified content item of type Home.
             /// </summary>
             /// <param name="instance">The content item of type Home that is a target of the extended API.</param>
-            public HomeFields(Profiles instance)
+            public HomeFields(Home instance)
             {
                 mInstance = instance;
             }
@@ -185,9 +185,9 @@ namespace CMS.DocumentEngine.Types.MC
         #region "Constructors"
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Profiles" /> class.
+        /// Initializes a new instance of the <see cref="Home" /> class.
         /// </summary>
-        public Profiles() : base(CLASS_NAME)
+        public Home() : base(CLASS_NAME)
         {
             mFields = new HomeFields(this);
         }
