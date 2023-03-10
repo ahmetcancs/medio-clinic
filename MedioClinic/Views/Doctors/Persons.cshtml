@@ -1,8 +1,6 @@
-﻿@model IEnumerable<MedioClinic.Models.Persons.PersonsViewModel>
-@using Kentico.Content.Web.Mvc;
-@using Kentico.PageBuilder.Web.Mvc
-@using Kentico.Web.Mvc
-
+﻿@*@model IEnumerable<MedioClinic.Models.Persons.PersonsViewModel>*@
+@*@model MedioClinic.Models.Persons.TryViewModel*@
+@model IEnumerable<MedioClinic.Models.Persons.PersonsViewModel>
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -10,7 +8,7 @@
 <div class="section">
     <div class="container">
         <div class="row">
-            @foreach (var profile in Model.AsEnumerable())
+            @foreach (var profile in Model)
             {
                 <div class="kn-doctor-profile">
                     <div class="col l4 m6 s12">

@@ -11,6 +11,7 @@ using MedioClinic.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -19,7 +20,7 @@ namespace BlankSiteCore
     public class Startup
     {
         public const string DEFAULT_WITHOUT_LANGUAGE_PREFIX_ROUTE_NAME = "DefaultWithoutLanguagePrefix";
-        public const string CONSTRAINT_FOR_NON_ROUTER_PAGE_CONTROLLERS = "Home|Doctors|Contact|Profiles";
+        public const string CONSTRAINT_FOR_NON_ROUTER_PAGE_CONTROLLERS = "Home|Doctors|Contact";
         
         public IWebHostEnvironment Environment { get; }
 
@@ -63,6 +64,8 @@ namespace BlankSiteCore
 
             services.AddAuthentication();
              services.AddAuthorization();
+            
+       
             services.AddMedioClinicServices();
             services.AddControllersWithViews();
         }

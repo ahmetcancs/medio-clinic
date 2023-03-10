@@ -1,6 +1,7 @@
 ﻿using CMS.DocumentEngine;
 using CMS.DocumentEngine.Types.MC;
 using DocumentFormat.OpenXml.Office2010.ExcelAc;
+using DocumentFormat.OpenXml.Spreadsheet;
 using Kentico.Content.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
 using MedioClinic.Controllers;
@@ -44,12 +45,19 @@ namespace MedioClinic.Controllers
         }
         public IActionResult persons()
         {
-            List<PersonsViewModel> viewModelList = new List<PersonsViewModel>();
-            var persons = personsRepository.GetPersons("/persons").FirstOrDefault();
+
+            /* List<PersonsViewModel> viewModelList = new List<PersonsViewModel>();
+             viewModelList = (List<PersonsViewModel>)personsRepository.GetPersons("/doctors/persons").Select(x => PersonsViewModel.GetViewModel(x));*/
+
+            /*var persons = personsRepository.GetPersons("/doctors/persons").FirstOrDefault();
             var viewModel = new PersonsViewModel();
             viewModel = PersonsViewModel.GetViewModel(persons);
-            viewModelList.Add(viewModel);
-            return View("Persons",viewModelList.AsEnumerable());
+            viewModelList.Add(viewModel);*/
+            var trySection = personsRepository.GetPersons("doctors/persons").FirstOrDefault();
+            var viewModel = new TryViewModel();
+
+            viewModel = TryViewModel.GetViewModel(trySection, personsRepository);
+            return View("Persons", viewModel);
         }
     }
 }
