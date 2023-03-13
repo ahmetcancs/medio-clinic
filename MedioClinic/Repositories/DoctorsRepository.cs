@@ -4,13 +4,8 @@ using System.Collections.Generic;
 
 namespace MedioClinic.Repositories
 {
-    public class DoctorsRepository
+    public class DoctorsRepository : IDoctorsRepository
     {
-        private readonly IPageRetriever pageRetriever;
-        public DoctorsRepository(IPageRetriever pageRetriever)
-        {
-            this.pageRetriever = pageRetriever;
-        }
         public IEnumerable<DoctorsSection> GetDoctorsSections(string nodeAliasPath)
         {
             return DoctorsSectionProvider.GetDoctorsSections();

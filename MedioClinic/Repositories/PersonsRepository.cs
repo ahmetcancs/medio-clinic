@@ -6,14 +6,8 @@ using System.Linq;
 
 namespace MedioClinic.Repositories
 {
-    public class PersonsRepository
+    public class PersonsRepository : IPersonRepository
     {
-        private readonly IPageRetriever pageRetriever;
-       
-        public PersonsRepository(IPageRetriever pageRetriever)
-        {
-            this.pageRetriever = pageRetriever;
-        }
 
         public IEnumerable<Persons> GetPersons(string nodeAliasPath)
         {

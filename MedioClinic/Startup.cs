@@ -34,7 +34,7 @@ namespace BlankSiteCore
         
         public void ConfigureServices(IServiceCollection services)
         {
-            // Enable desired Kentico Xperience features
+            
             var kenticoServiceCollection = services.AddKentico(features =>
             {
                  features.UsePageBuilder();
@@ -49,35 +49,29 @@ namespace BlankSiteCore
 
             if (Environment.IsDevelopment())
             {
-                // By default, Xperience sends cookies using SameSite=Lax. If the administration and live site applications
-                // are hosted on separate domains, this ensures cookies are set with SameSite=None and Secure. The configuration
-                // only applies when communicating with the Xperience administration via preview links. Both applications also need 
-                // to use a secure connection (HTTPS) to ensure cookies are not rejected by the client.
                 kenticoServiceCollection.SetAdminCookiesSameSiteNone();
 
-                // By default, Xperience requires a secure connection (HTTPS) if administration and live site applications
-                // are hosted on separate domains. This configuration simplifies the initial setup of the development
-                // or evaluation environment without a the need for secure connection. The system ignores authentication
-                // cookies and this information is taken from the URL.
+             
                 kenticoServiceCollection.DisableVirtualContextSecurityForLocalhost();
             }
 
             services.AddAuthentication();
              services.AddAuthorization();
             
-       
-            services.AddMedioClinicServices();
+            
+            services.AddMedioClinicServices(); //IServiceCollectionExtensions (Repositories)
+
             services.AddControllersWithViews();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        
         public void Configure(IApplicationBuilder app)
         {
             if (Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseStatusCodePagesWithReExecute("/error/{0}");
             app.UseStaticFiles();
 
             app.UseKentico();
@@ -97,7 +91,15 @@ namespace BlankSiteCore
                  {
                      await context.Response.WriteAsync("The site has not been configured yet.");
                  });*/
+
+               // endpoints.Kentico().MapRoutes();
+                endpoints.MapControllerRoute(
+                   name: "error",
+                   pattern: "error/{code}",
+                   defaults: new { controller = "HttpErrors", action = "Error" }
+                );
                 endpoints.MapDefaultControllerRoute();
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Doctors}/{action=persons}/{id?}");

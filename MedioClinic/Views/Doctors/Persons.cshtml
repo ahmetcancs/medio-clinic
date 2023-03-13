@@ -1,37 +1,33 @@
-﻿@*@model IEnumerable<MedioClinic.Models.Persons.PersonsViewModel>*@
-@*@model MedioClinic.Models.Persons.TryViewModel*@
-@model IEnumerable<MedioClinic.Models.Persons.PersonsViewModel>
-@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+﻿@using MedioClinic.Models.Persons;
+@model IEnumerable<PersonsViewModel>
 
 <div class="section">
     <div class="container">
         <div class="row">
-            @foreach (var profile in Model)
+            @foreach (var Items in Model)
             {
                 <div class="kn-doctor-profile">
                     <div class="col l4 m6 s12">
-                        <img src="@profile.Image" alt="Doctor's photo" />
+                        <img src="@Items.Image" alt="Doctor's photo" />
                     </div>
                     <div class="col l8 m6 s12">
                         <div class="kn-doctor-profile-box">
                             <div class="kn-doctor-profile-header">
-                                <h4> @profile.Title</h4>
+                                <h4> @Items.Title</h4>
                             </div>
                             <div class="kn-badges kn-margin-no-left-s kn-padding-no-left-s">
-                                <span class="kn-badge @(profile.Badge == true ? "opened" : "")">Open</span>
-                                <span class="kn-badge @(profile.Badge == true ? "closed" : "")">now closed</span>
+                                <span class="kn-badge @(Items.Badge == true ? "opened" : "")">Open</span>
+                                <span class="kn-badge @(Items.Badge == true ? "closed" : "")">now closed</span>
                             </div>
                             <br>
                             <div class="kn-doctor-profile-degree">
                                 <div class="">
-                                    @Html.Raw(profile.Education)
+                                    @Html.Raw(Items.Education)
                                 </div>
                             </div>
                             <div class="kn-doctor-profile-bio">
-                                <h5>@profile.DescriptionTitle</h5>
-                                @Html.Raw(profile.Description)
+                                <h5>@Items.DescriptionTitle</h5>
+                                @Html.Raw(Items.Description)
                             </div>
                         </div>
                     </div>

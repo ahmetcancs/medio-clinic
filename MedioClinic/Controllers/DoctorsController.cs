@@ -10,6 +10,7 @@ using MedioClinic.Models.Persons;
 using MedioClinic.Repositories;
 
 using Microsoft.AspNetCore.Mvc;
+using org.pdfclown.documents;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -46,18 +47,9 @@ namespace MedioClinic.Controllers
         public IActionResult persons()
         {
 
-            /* List<PersonsViewModel> viewModelList = new List<PersonsViewModel>();
-             viewModelList = (List<PersonsViewModel>)personsRepository.GetPersons("/doctors/persons").Select(x => PersonsViewModel.GetViewModel(x));*/
-
-            /*var persons = personsRepository.GetPersons("/doctors/persons").FirstOrDefault();
-            var viewModel = new PersonsViewModel();
-            viewModel = PersonsViewModel.GetViewModel(persons);
-            viewModelList.Add(viewModel);*/
-            var trySection = personsRepository.GetPersons("doctors/persons").FirstOrDefault();
-            var viewModel = new TryViewModel();
-
-            viewModel = TryViewModel.GetViewModel(trySection, personsRepository);
-            return View("Persons", viewModel);
+            
+            var viewModel = personsRepository.GetPersons("/doctors/persons");
+            return View("Persons", viewModel.Select(viewModel => PersonsViewModel.GetViewModel(viewModel)));
         }
     }
 }
