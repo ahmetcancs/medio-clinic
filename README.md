@@ -1,2 +1,2 @@
 # Long Term Internship Program
-# Training .NET backend development
+# Training in backend development
