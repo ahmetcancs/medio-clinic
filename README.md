@@ -1,2 +1,3 @@
-# Long Term Internship Program
-# Training in backend development
+Long Term Internship Program
+
+Training in backend development
